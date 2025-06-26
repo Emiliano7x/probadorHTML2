@@ -1,0 +1,50 @@
+.toggle-label {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  background: #0a0909;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 2001;
+  font-family: inherit;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.16);
+  transition: background 0.2s;
+}
+.toggle-label:hover {
+  background: #333;
+}
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: -350px;
+ /*  width: 320px;
+  height: 100vh; */
+  max-width: 90vw;        
+  max-height: 90vh;  
+  background: #222;
+  color: #fff;
+  padding: 24px 20px 40px 20px;
+  overflow-y: hidden;
+
+  z-index: 2000;
+  font-size: 12px;
+  font-family: inherit;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.25);
+  transition: left 0.3s cubic-bezier(.4,0,.2,1);
+}
+#toggle-menu:checked ~ .side-panel {
+  left: 0;
+}
+code {
+  background: #333;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 0.97em;
+}
+#toggle-menu:checked ~ .toggle-label {
+  left: 340px;
+  background: #333;
+}

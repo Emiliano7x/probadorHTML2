@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+<html lang="es" ><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ 
+
+  <meta charset="UTF-8">
+  <title>Editor HTML y CSS</title>
+
+
+  <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+  
+  <link rel="stylesheet" href="estilos/code-input.min.css">  
+  <script src="plugins/code-input.min.js"></script>
+
+  <!-- PrismJS para resaltado -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+        <!-- plugins de prismjs -->
+      <script src="plugins/indent.js"></script>
+      <script src="plugins/auto-close-brackets.js"></script>
+
+
+  <link rel="stylesheet" href="estilos/prism-vscode-dark.css"> <!-- resaltado que tiene vscode -->
+
+  
+  <!--Register code-input template-->
+    <script>
+      codeInput.registerTemplate("syntax-highlighted", 
+        codeInput.templates.prism(Prism, [
+              new codeInput.plugins.AutoCloseBrackets(), 
+              new codeInput.plugins.Indent(true, 2)] // 2 spaces indentation 
+            ));
+
+
+            
+    </script> 
+
+
+  <!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+  <link rel="stylesheet" type="text/css" href="estilos/style.css"></link>
+</head>
+<body>
+  
+ 
+    <header>
+<!--       <h1>CREADOR DE DIVS</h1>
+      <h4>Diseño Web</h4> -->
+    </header>
+
+    <!--NIVEL 1-->
+    <div class="wrap">
+       <h2>NIVEL 1</h2>
+       <br>
+       <p id="parrafo1" class="parrafo">Crea un div que se llame "contenedor" que mida 200 de ancho x 300 de alto, fondo gris, 
+                                        con margen de 10px y padding de 15px, que adentro diga "Esto es un DIV"
+        </p>
+
+       <br>
+       <p  class="txt_presionaBoton"></p>
+         <span id="idAyuditaSpam1" class="amarillo" title="class contenedor, width 200px, height 300px background-color, margin, padding" 
+               style="cursor: progress;">----AYUDA?----
+          </span>
+ 
+         <br><br>
+       <div class="contenedor">
+       
+                <div class="editor">
+                  <label>HTML:</label>
+                      <code-input id="html1" class="campoDato" placeholder="Escribí tu DIV en HTML aquí..." template="syntax-highlighted"  lang="html"></code-input>
+              </div>
+              <br>
+                <button onclick="probar(1)">Probar</button>
+              <br>
+              <div class="editor">
+                    <label>CSS:</label>
+                       <code-input id="css1" class="campoDato" placeholder="Escribí tu CSS aquí..." template="syntax-highlighted"  lang="css" ></code-input>
+              </div>
+      
+      </div>
+      <div class="contenedor">
+        <label>Resultado:</label>        
+        <iframe id="resultado1"></iframe>
+      </div>
+    </div>
+
+
+    <!--FIN NIVEL 1-->
+  
+
+
+
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> //libreria para mandar el resultado por mail
+</script>
+
+
+<script  src="scripts/niveles.js"></script>
+<script  src="scripts/enunciados.js"></script>
+<script  src="scripts/barraNav.js"></script>
+
+<!-- esta ventana aparece al apretar el boton de enviar por mail, pide el nombre y el correo electronico, para enviarlos por mail junto al codigo -->
+<script  src="scripts/ventanaModal.js"></script>
+<link rel="stylesheet" href="estilos/ventanaModal.css">
+
+
+<!-- boton a la izquierda de la pagina que habre un panel que brinda ayuda de sintaxis -->
+<script   src="scripts/ayudaLateral.js"></script>
+<link rel="stylesheet" href="estilos/ayudaLateral.css">
+
+
+
+
+</body></html>

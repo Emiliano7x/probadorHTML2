@@ -1,0 +1,5 @@
+la opcion de ver cada nivel uno sobre otro o solo de a uno por ventana
+
+agregar en la barra de navagacion los niveles disponibles y los realizados
+
+agregar mas detalles en la ventana modal al enviar por email, por ej que se va a enviar
