@@ -1,4 +1,4 @@
-ProbadorHTML 2.0
+# ProbadorHTML 2.0
 
 Esta es una pequeña aplicacion web para practicar con HTML y CSS
 Esta escrito en HTNL con CSS y JavaScript por lo cual deberia poder ejecutarse en cualquier navegador web sin problemas.
@@ -23,7 +23,16 @@ usar este servicio de emailjs es util para proteger el mail de contacto personal
 que los recolectan para espamear publicidad
 
 
-    Estructura
+# Estructura del proyecto
+
+- `index.html`: Contiene el código HTML base y el primer nivel.
+- `niveles.js`: Genera los niveles adicionales al presionar "Agregar Nivel".
+- `enunciados.js`: Proporciona los textos de las consignas y ayudas.
+- `plugins/`: Incluye dependencias externas como code-input y PrismJS.
+- `ayudaLateral.js`: Controla el panel de ayuda lateral.
+- `barraNav.js`: Gestiona la barra superior y los botones de acciones.
+- `ventanaModal.js`: Muestra la ventana modal para enviar el correo electrónico.
+- `LICENSE`: Licencia del proyecto.
 
 En el index deje el codigo en html del primer nivel, luego los siguientes son creados desde "niveles.js" apretando el boton "Agregar Nivel", 
 trae los textos de las consignas y ayudas desde "enunciados.js"
@@ -32,9 +41,13 @@ los textarea usan code-input junto con prismjs para el resaltado del codigo (htt
 "barraNav.js" controla la barra superior donde esta el enlace al repositorio y los botones para mandar mail y guardar como json 
 "ventanaModal es invocada al enviar un email, pide el nombre y el correo para ser enviados junto con el  json del codigo
 
-Este proyecto fue creado como parte de la materia de diseño web de Fabian, tambien fue de quien tome la idea original del ProbadorHTML 
-por eso arranca como la version 2
-version 1: https://fabiangeloni.github.io/probador.html
 
-Este proyecto está licenciado bajo los términos de la Licencia Pública General GNU v3.0.
-Para más información, consulta el archivo LICENSE o visita https://www.gnu.org/licenses/gpl-3.0.html.
+# Créditos
+
+Este proyecto fue creado como parte de la materia de diseño web de Fabián, quien también inspiró la idea original del ProbadorHTML.  
+Versión original: [ProbadorHTML 1.0](https://fabiangeloni.github.io/probador.html)
+
+# Licencia
+
+Este proyecto está licenciado bajo los términos de la Licencia Pública General GNU v3.0.  
+Para más información, consulta el archivo `LICENSE` o visita [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html).
