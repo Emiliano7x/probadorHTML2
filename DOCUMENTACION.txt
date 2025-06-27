@@ -36,4 +36,5 @@ Este proyecto fue creado como parte de la materia de diseño web de Fabian, tamb
 por eso arranca como la version 2
 version 1: https://fabiangeloni.github.io/probador.html
 
-Uso la licencia MIT para considera mi codigo libre
+Este proyecto está licenciado bajo los términos de la Licencia Pública General GNU v3.0.
+Para más información, consulta el archivo LICENSE o visita https://www.gnu.org/licenses/gpl-3.0.html.
