@@ -1,7 +1,4 @@
-CORROBORAR SI EL NOMBRE ESTA DISPONIBLE O 
- USAR otro mas distintivo, ej:
-        probadorHTML-CSS
-
+probadorHTML
 
 la opcion de ver cada nivel uno sobre otro o solo de a uno por ventana
 
@@ -19,3 +16,10 @@ las diferencias que encuentre
 arreglar o ver que hacer con los tamaños de los contenedores. 
 en la pantalla de la pc se ve bien pero en la notebok quedan grande.
 buscar como reorganizarlos....
+
+la pagina debe de ser responsib
+
+cambiar las imagenes de los botones
+
+cambiar la estructura de los enunciados a json para tener el enunciado junto a su ayuda. 
+mas adelante se puede hace una interfaz para completar los textos y generar este json

@@ -25,6 +25,17 @@ function crearBarraNavegacion(){
 
     barraNav.insertBefore(tituloBarra, barraNav.firstChild);
 
+    // crear un enlace al repositorio de GitHub
+    const enlaceGitHub = document.createElement('a');
+    enlaceGitHub.href = 'https://github.com/Emiliano7x/probadorHTML2.git';
+    enlaceGitHub.textContent = 'Visita mi => Repositorio en GitHub';   
+    enlaceGitHub.style.color = '#fff';
+    enlaceGitHub.style.textDecoration = 'none';   
+    enlaceGitHub.style.marginLeft = '20px';       // margen izquierdo para separar del título
+    enlaceGitHub.target = '_blank';                // abrir en nueva pestaña    
+    enlaceGitHub.rel = 'noopener noreferrer';     // seguridad al abrir en nueva pestaña 
+    barraNav.appendChild(enlaceGitHub);
+    
 
     // Crear contenedor para los campos y labels
     const fieldsContainer = document.createElement('div');

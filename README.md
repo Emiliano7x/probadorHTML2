@@ -40,7 +40,7 @@ la idea es tenerlos a todos nucleados en un mismo sitio para revisarlos y/o modi
 a partir del enunciado 2 estan creados todos los niveles con DOM
 
 
->>>>> Para crear un nivel <<<<<<, 
+>>> >> Para crear un nivel <<<<<<, 
 
 hay que agregar primero los textos en enunciados.js agregar un case con el texto para el enunciado y si tiene ayuda tambien de la misma forma
    
@@ -51,12 +51,9 @@ hay que agregar primero los textos en enunciados.js agregar un case con el texto
         case N:
             str= "...";
 
- y en script.js
-    en las ultimas lineas se crean tantos niveles como se especifique en el for, 
+ 
+el nivel 1 es el unico que se creo de la forma tradicional con html
 
-el nivel 1 es el unico que se creo de la forma tradicional con html, tranquilamente se puede eliminar y comensar con el for en el 1
-
-si no se agrega ningun anunciado o ayudita, aparecera un texto por defecto
 
 for (let index = 2; index <=10; index++) {
     crearNivel(index, enunciado(index), ayuditaSpam(index)); 
