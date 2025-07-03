@@ -81,6 +81,22 @@ function crearBarraNavegacion(){
 //    return barraNav;
 }
 
+// Crear una instancia
+const switchTemas = new SwitchTemas({
+  defaultTheme: 'dark',
+  id: 'theme-switch', // ID del input checkbox
+  checked: false, // true para dark, false para light
+  position: 'top-right', // top-right o 'bottom-left' 
+  onToggle: (nuevoTema) => console.log(`Tema cambiado a: ${nuevoTema}`)
+});
+
+// Iniciarlo en el DOM 
+document.addEventListener('DOMContentLoaded', () => switchTemas.init());
+
+
+
+
+
 // Función para escapar caracteres especiales en HTML 
 /* Por qué escapar el HTML? Si no lo haces, el correo interpretará las etiquetas y no mostrará el código, sino el resultado visual de ese HTML. */
 function escapeHtml(text) {

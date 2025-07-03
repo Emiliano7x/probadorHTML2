@@ -1,49 +1,59 @@
+/* Botón de pestaña vertical*/
 .toggle-label {
   position: fixed;
-  top: 100px;
-  left: 0px;
-  background: #0a0909;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 6px;
+  top: 17%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #2e2642;
+  color: white;
+  padding: 10px 5px;
   cursor: pointer;
-  z-index: 2001;
-  font-family: inherit;
-  font-size: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.16);
-  transition: background 0.2s;
+  z-index: 1001;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+  margin-left: 0px;
+  transition: background 0.3s;
 }
 .toggle-label:hover {
   background: #333;
 }
+
+/* Panel lateral */
 .side-panel {
   position: fixed;
   top: 0;
-  left: -350px;
- /*  width: 320px;
-  height: 100vh; */
+  left: -350px; /* fuera de pantalla por defecto */
+  width: 320px;
+  height: 100vh; 
   max-width: 90vw;        
   max-height: 90vh;  
   background: #222;
   color: #fff;
-  padding: 24px 20px 40px 20px;
-  overflow-y: hidden;
-
-  z-index: 2000;
+  
+  padding: 10px 10px 10px 35px;
+  overflow-y: auto ;
+  z-index: 1000;
   font-size: 12px;
   font-family: inherit;
   box-shadow: 2px 0 12px rgba(0,0,0,0.25);
   transition: left 0.3s cubic-bezier(.4,0,.2,1);
 }
+
+
+/* Checkbox oculto para controlar el estado del menu lateral (visible/oculto */
 #toggle-menu:checked ~ .side-panel {
   left: 0;
 }
+
 code {
   background: #333;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: 0.97em;
 }
+
 #toggle-menu:checked ~ .toggle-label {
   left: 340px;
   background: #333;

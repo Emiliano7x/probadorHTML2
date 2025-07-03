@@ -60,12 +60,6 @@ function crearNivel(numero,unEnunciado, unaAyudita) {
   contenedor1.appendChild(document.createElement('br'));
   contenedor1.appendChild(document.createElement('br'));
 
-    // Botón Probar
-  const boton = document.createElement('button');
-  boton.textContent = 'Probar';
-  boton.onclick = function() { probar(numero); };                                 //-----boton probar
-  contenedor1.appendChild(boton);
-
   wrap.appendChild(contenedor1);
 
 
@@ -96,8 +90,14 @@ function crearNivel(numero,unEnunciado, unaAyudita) {
   contenedor2.appendChild(labelResultado);
 
   const iframe = document.createElement('iframe');
-  iframe.id = 'resultado'+numero;                                                 //-----dato q cambia entre niveles
+  iframe.id = 'resultado' + numero;                                   //numero de nivel-----dato q cambia entre niveles
   contenedor2.appendChild(iframe);
+
+      // Botón Probar
+  const boton = document.createElement('button');
+  boton.textContent = 'Probar';
+  boton.onclick = function() { probar(numero); };                                 //-----boton probar
+  contenedor2.appendChild(boton);
 
   wrap.appendChild(contenedor2);
 
