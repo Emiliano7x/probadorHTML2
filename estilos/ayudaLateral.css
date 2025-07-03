@@ -24,7 +24,7 @@
 .side-panel {
   position: fixed;
   top: 0;
-  left: -350px; /* fuera de pantalla por defecto */
+  left: -370px; /* fuera de pantalla por defecto */
   width: 320px;
   height: 100vh; 
   max-width: 90vw;        
