@@ -31,16 +31,19 @@
   max-height: 90vh;  
   background: #222;
   color: #fff;
-  
+  line-height: 1;
   padding: 10px 10px 10px 35px;
   overflow-y: auto ;
   z-index: 1000;
-  font-size: 12px;
+  font-size: 11px;
   font-family: inherit;
   box-shadow: 2px 0 12px rgba(0,0,0,0.25);
   transition: left 0.3s cubic-bezier(.4,0,.2,1);
 }
 
+.side-panel p {
+  margin: 1px;
+}
 
 /* Checkbox oculto para controlar el estado del menu lateral (visible/oculto */
 #toggle-menu:checked ~ .side-panel {
@@ -48,7 +51,7 @@
 }
 
 code {
-  background: #333;
+  background: #1103033a;
   padding: 2px 5px;
   border-radius: 3px;
   font-size: 0.97em;

@@ -1,184 +1,113 @@
-
-
-*{box-sizing:border-box;
-      margin:0px;
-      padding:0px;}
-
+:root {
+  --bg-color: #2c2f3a;
+  --container-bg: #3c3f4f;
+  --input-bg: #1e1e2e;
+  --text-color: #f2f2f2;
+  --accent-color: #00c3ff;
+  --shadow: 0px 4px 20px rgba(0,0,0,0.3);
+  --radius: 12px;
+}
 
  body {
-      font-family: sans-serif;
-      
-      background-color: #323344;
-      margin:0px 0px 0px 20px;
-      padding:20px;
-      color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 30px;
+  margin: 0;
+} 
+
+h2 {
+  color: var(--accent-color);
+  font-size: 22px;
+  margin-bottom: 1px;
 }
-
-  /* Checkbox oculto para controlar el estado */
-#toggle-menu {
-  display: none;
-}
-
-/* Botón de pestaña vertical */
-.toggle-label {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  background: #333;
-  color: white;
-  padding: 10px 5px;
-  cursor: pointer;
-  z-index: 1001;
-  writing-mode: vertical-rl;
-  text-align: center;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
-  margin-left: 0px;
-  transition: background 0.3s;
-}
-
-.toggle-label:hover {
-  background: #555;
-}
-
-/* Panel lateral */
-.side-panel {
-  position: fixed;
-  top: 0;
-  left: -360px; /* fuera de pantalla por defecto */
-  width: 350px;
-  height: 100vh;
-  background: rgba(250, 250, 250, 0.9);
-  padding: 20px 15px 20px 35px;
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
-  transition: left 0.4s ease;
-  z-index: 1000;
-  color: black;
-  overflow-y: auto;
-  font-size: 13PX;
-  line-height: 15px;
-  font-weight: 600;
-}
-
-/* Mostrar panel cuando el checkbox está activado */
-#toggle-menu:checked ~ .side-panel {
-  left: 0;
-}
-
-/* Animación extra: contenido que se mueve suavemente si querés */
-.main-content {
-  padding: 2rem;
-}
-
-/* 
-header {
-    width: 100%;
-    height: 70px;
-    background-color: rgb(24, 24, 24);
-    padding: 30px 10px;
-
-    margin-bottom: 10px;
-    margin-left: -10px;    
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 700px; /* que tanto se alejan entre si, desde el centro hacia los bordes
-}
-
- h1{float: left;}
-*/
-
-h4{margin-top:7px} 
-
-h2{color: aqua;}
-
-.amarillo, .txt_presionaBoton{
-  color: yellow;}
-
-  .parrafo{ white-space: pre-line} /* para que funcionen los saltos de linea \n en los enunciados */ 
-
-.contenedor{width:49%; 
-            height:auto; 
-             
-            float:left;
-            /* scrollbar-width: none;  *//* Firefox */           
-            -ms-overflow-style: none; /* IE y Edge */}                
-                                          
-.contenedor::-webkit-scrollbar {    /* para que desaparezca la barra scroll inferior, junto a las 2 lineas de arriba */
-  display: none; /* Chrome, Safari, Opera */
-}
-
-.footer{
-  float:none;
-   width: 100%;
-}
-
-
-code-input {
-    min-width: 100%;
-      max-width: 100%;
-      height: 250px;
-      max-height: 300px;
-      font-family: monospace;
-      font-size: 12px;
-      overflow: auto;
-      --padding: 10px;
-      flex: 1;
-      margin:0px 0px 30px 20px;
-      float: left;
-      background-color: #1c1d1f;
-      color: rgb(173, 180, 141);
-     
-}
-
-/* no funciona cambiar de color  */
- code-input::placeholder { color: rgb(216, 216, 226); }
-
  
+/* 
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px auto;
+} */
 
-
-.editor {
-  min-width: 100%;
-  max-width: 100%;
-  height: 200px;
-  max-height: 250px;
-  text-align: left;  
-}
-
-.clear{clear: both; margin-bottom: 10px;}
-
+/* .contenedor {
+  background-color: var(--container-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  width: 49%;
+  max-width: 480px;
+  transition: transform 0.3s ease;
+} */
 .wrap{margin:40px auto;
       border-bottom: 1px solid #ccc;
       overflow: auto;
       text-align: center;
     }
 
-iframe {
-  width: 95%;
-  min-height: 590px;
-  border: 1px solid #ccc;
-  background-color: white;
+.contenedor{width:49%; 
+            height:auto; 
+             
+            float:left;
+            /* scrollbar-width: none;  *//* Firefox */           
+            -ms-overflow-style: none; /* IE y Edge */
+          transition: transform 0.3s ease;
+        }                
+                                   
+
+.contenedor:hover {
+  transform: translateY(-2px);
+}
+
+
+code-input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid #555;
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+  font-family: monospace;
+
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: var(--accent-color);
+  color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius);
+  padding: 10px 20px;
   cursor: pointer;
-  float:right;
-  margin:10px;
+  margin-top: 15px;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #009ecb;
 }
 
-label {
-  font-weight: bold;
-  margin: 10px 0px -30px 30px;
+iframe {
+  width: 100%;
+  min-height: 500px;
+  border: 1;
+  border-radius: var(--radius);
+  background-color: white;
 }
 
+/* Tema claro */
+.light-theme {
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --container-bg: #fff;
+  --input-bg: #eee;
+  --accent-color: #006aff;
+}
+
+/* Tema oscuro */
+.dark-theme {
+  --bg-color: #2c2f3a;
+  --text-color: #f2f2f2;
+  --container-bg: #3c3f4f;
+  --input-bg: #1e1e2e;
+  --accent-color: #00c3ff;
+}
