@@ -17,13 +17,24 @@ function crearBarraNavegacion(){
     barraNav.style.fontSize = "0.95rem";         // más compacto
 
     // Crear el título
-    const tituloBarra = document.createElement('span');
-    tituloBarra.textContent = 'CREADOR DE DIVS'; // Cambia el texto por el nombre que desees
+   /*  const tituloBarra = document.createElement('span');
+    tituloBarra.textContent = 'CREADOR DE DIVS';
     tituloBarra.style.fontWeight = 'bold';
     tituloBarra.style.fontSize = '1.1rem';
     tituloBarra.style.marginRight = '20px';
+ */
+    const imagenLogo = document.createElement('img');
+    imagenLogo.src = 'imagenes/titulo_creador_de_divs.png';
+    imagenLogo.alt = 'Creador de Divs Logo';
+    imagenLogo.style.width = '50px';              // tamaño del logo  
+    imagenLogo.style.height = '50px';             // tamaño del logo
+    imagenLogo.style.marginRight = '10px';        // margen derecho para separar del título 
+    imagenLogo.style.marginLeft = '30px';        
+    imagenLogo.style.verticalAlign = 'middle';    // alinear verticalmente con el texto
+   // tituloBarra.insertBefore(imagenLogo, tituloBarra.firstChild); // insertar imagen
 
-    barraNav.insertBefore(tituloBarra, barraNav.firstChild);
+
+    barraNav.insertBefore(imagenLogo, barraNav.firstChild);
 
     // crear un enlace al repositorio de GitHub
     const enlaceGitHub = document.createElement('a');

@@ -1,7 +1,7 @@
 /* Botón de pestaña vertical*/
 .toggle-label {
   position: fixed;
-  top: 17%;
+  top: 20%;
   left: 0;
   transform: translateY(-50%);
   background: #2e2642;
