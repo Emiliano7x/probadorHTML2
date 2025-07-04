@@ -34,6 +34,28 @@ function crearBarraNavegacion(){
    // tituloBarra.insertBefore(imagenLogo, tituloBarra.firstChild); // insertar imagen
 
 
+/* <label class="theme-switch">
+  <input type="checkbox" id="toggleTheme">
+  <span class="slider"></span>
+</label> */
+   
+/*    const switchTemas = document.createElement('label');
+    switchTemas.className = 'theme-switch'; 
+    switchTemas.style.marginLeft = 'auto'; // empujar al final
+    switchTemas.style.marginRight = '20px'; // margen derecho para separar del título
+    switchTemas.style.display = 'flex';
+
+    inputCheckbox = document.createElement('input');
+    inputCheckbox.type = 'checkbox';
+    inputCheckbox.id = 'toggleTheme';
+    inputCheckbox.checked = true; // por defecto dark
+   
+    spanSlider = document.createElement('span');
+    spanSlider.className = 'slider';
+    switchTemas.appendChild(inputCheckbox);
+    switchTemas.appendChild(spanSlider);
+    barraNav.appendChild(switchTemas);
+ */
     barraNav.insertBefore(imagenLogo, barraNav.firstChild);
 
     // crear un enlace al repositorio de GitHub
