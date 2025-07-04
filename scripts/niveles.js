@@ -57,8 +57,6 @@ function crearNivel(numero,unEnunciado, unaAyudita) {
   editorHtml.appendChild(codeInputHtml);
 
   contenedor1.appendChild(editorHtml);
-  contenedor1.appendChild(document.createElement('br'));
-  contenedor1.appendChild(document.createElement('br'));
 
   wrap.appendChild(contenedor1);
 

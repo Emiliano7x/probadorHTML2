@@ -12,16 +12,21 @@
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 30px;
+  padding: 20px;
   margin: 0;
 } 
 
 h2 {
   color: var(--accent-color);
   font-size: 22px;
-  margin-bottom: 1px;
+  margin:auto;
 }
  
+.amarillo  {
+  color: #ffcc00;
+  font-weight: bold;
+  cursor: pointer;
+}
 /* 
 .wrap {
   display: flex;
@@ -40,6 +45,21 @@ h2 {
   max-width: 480px;
   transition: transform 0.3s ease;
 } */
+ .parrafo{
+  margin:10px auto;
+  line-height: 0.9;
+  padding: 10px 10px 10px 35px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-color);
+  background-color: var(--container-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 79%;
+  max-width: 880px;
+  transition: transform 0.3s ease;
+ }
+
 .wrap{margin:40px auto;
       border-bottom: 1px solid #ccc;
       overflow: auto;
@@ -94,20 +114,4 @@ iframe {
   background-color: white;
 }
 
-/* Tema claro */
-.light-theme {
-  --bg-color: #f9f9f9;
-  --text-color: #222;
-  --container-bg: #fff;
-  --input-bg: #eee;
-  --accent-color: #006aff;
-}
 
-/* Tema oscuro */
-.dark-theme {
-  --bg-color: #2c2f3a;
-  --text-color: #f2f2f2;
-  --container-bg: #3c3f4f;
-  --input-bg: #1e1e2e;
-  --accent-color: #00c3ff;
-}
