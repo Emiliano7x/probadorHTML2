@@ -230,18 +230,14 @@ async function mandarPorMail() {
   const datos = await pedirDatosYProcesarVentanaModal();
 
   if (datos) {
-    alert(`Datos recibidos: ${datos.nombre}`);  // prestarle atencion a las comillas, 
+   // alert(`Datos recibidos: ${datos.nombre}`);  // prestarle atencion a las comillas, 
                                                  //tienen que ser las invertidas, la que se usa para los acentos en bocales
-  } else {
-    console.log("El usuario canceló.");
-  }
-
-
+  
 /*     metodo para mandar mail, 
            id del servicio de mail, se obtiene de emailjs-Acounts
         id del template del correo que se manda, se configura en emailjs-Email Templates
        templateParams recive un objeto, los nombres de las propiedades deben coincidir con los usados en el template del mail {{codigo}}  */
-/* 
+
     emailjs.send('service_cf2cihg', 'template_4mh8b9t', datos).then(
       (response) => {
         console.log(datos.nombre + ' - '+ datos.email, response.status, response.text);
@@ -252,7 +248,10 @@ async function mandarPorMail() {
         alert('FALLA AL ENVIAR...', error);
         },  
       );
- */
+} else {
+    console.log("El usuario canceló.");
+  }
+
 }
 
 /* inicializacion del servicio de mail */
